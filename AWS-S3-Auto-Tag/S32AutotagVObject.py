@@ -1,11 +1,3 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-# @Time    : 2018/8/2 下午3:03
-# @Author  : Dicey
-# @File    : S3AutotagVObject.py
-# @Software: PyCharm
-
-
 from __future__ import print_function
 import json
 import boto3

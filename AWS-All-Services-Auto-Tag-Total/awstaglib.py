@@ -1,14 +1,5 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-# @Time    : 2018/8/4 上午1:29
-# @Author  : Dicey
-# @File    : awstaglib.py
-# @Software: PyCharm
-
-
 import logging
 import boto3
-
 
 class Tagger:
     detail = {}

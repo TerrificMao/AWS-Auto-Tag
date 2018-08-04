@@ -1,10 +1,3 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-# @Time    : 2018/8/3 上午9:39
-# @Author  : Dicey
-# @File    : RedShiftAutotag.py
-# @Software: PyCharm
-
 from __future__ import print_function
 import json
 import boto3

@@ -1,10 +1,3 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-# @Time    : 2018/8/2 上午10:48
-# @Author  : Dicey
-# @File    : Lambda2Autotag.py
-# @Software: PyCharm
-
 from __future__ import print_function
 import json
 import boto3

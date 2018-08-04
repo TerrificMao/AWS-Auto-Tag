@@ -1,10 +1,3 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-# @Time    : 2018/8/3 下午12:20
-# @Author  : Dicey
-# @File    : SQSAutotag.py
-# @Software: PyCharm
-
 from __future__ import print_function
 import json
 import boto3
