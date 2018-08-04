@@ -1,10 +1,3 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-# @Time    : 2018/8/4 上午10:49
-# @Author  : Dicey
-# @File    : AWSAutoTagTotal3.0.py
-# @Software: PyCharm
-
 from __future__ import print_function
 import json
 import boto3
