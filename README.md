@@ -1,7 +1,5 @@
 # AWSAutoTag
 
-[AWS-All-Services-Auto-Tag](https://github.com/TerrificMao/AWS-Auto-Tag/blob/master/AWS-All-Services-Auto-Tag-Total/AWSAutoTagTotalV3.py) AWS All Services Auto Tag
-
 [EC2-Auto-Tag](https://github.com/TerrificMao/AWS-Auto-Tag/blob/master/EC2_Auto_Tag.md) AWS EC2/EBS/Image/Snapshot Auto Tag
 
 [VPC-Auto-Tag](https://github.com/TerrificMao/AWS-Auto-Tag/blob/master/EC2_Auto_Tag.md) Refer AWS EC2 Auto Tag
@@ -17,3 +15,5 @@
 [SQS-Auto-Tag](https://github.com/TerrificMao/AWS-Auto-Tag/blob/master/EC2_Auto_Tag.md) Refer AWS EC2 Auto Tag
 
 [Lambda-Auto-Tag](https://github.com/TerrificMao/AWS-Auto-Tag/blob/master/EC2_Auto_Tag.md) Refer AWS EC2 Auto Tag
+
+[AWS-All-Services-Auto-Tag](https://github.com/TerrificMao/AWS-Auto-Tag/blob/master/AWS-All-Services-Auto-Tag-Total/AWSAutoTagTotalV3.py) AWS All Services Auto Tag
