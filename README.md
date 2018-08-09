@@ -65,9 +65,9 @@
 
 7. [AWS-SQS-Auto-Tag](https://github.com/TerrificMao/AWS-Auto-Tag/blob/master/EC2_Auto_Tag.md) Refer AWS EC2 Auto Tag
 
-8. 单独为 SQS 设置 Tag 及 SQS  在  CloudWatch 中监测到的事件信息
+   单独为 SQS 设置 Tag 及 SQS  在  CloudWatch 中监测到的事件信息
 
-9. [AWS-Lambda-Auto-Tag](https://github.com/TerrificMao/AWS-Auto-Tag/blob/master/EC2_Auto_Tag.md) Refer AWS EC2 Auto Tag
+8. [AWS-Lambda-Auto-Tag](https://github.com/TerrificMao/AWS-Auto-Tag/blob/master/EC2_Auto_Tag.md) Refer AWS EC2 Auto Tag
 
    单独为 Lambda 设置 Tag 及 Lambda  在  CloudWatch 中监测到的事件信息
 
