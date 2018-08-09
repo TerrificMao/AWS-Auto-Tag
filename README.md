@@ -19,7 +19,7 @@
 **注意**
 
 1. 在创建 Lambda 函数时，保证 Lambda 函数的 角色（Role）**同时**拥有操作 **Lambda 函数**与**对应资源**的权限。
-2. 大多数资源的 API 都可以在 [AWS 文档](https://amazonaws-china.com/cn/documentation/?nc2=h_ql_d&awsm=ql-5) 找到。但是，特别的，Lambda 在 CloudTrail 中记录的 API 名称与[Lambda 文档](https://docs.aws.amazon.com/zh_cn/lambda/latest/dg/API_Reference.html)中并不一致。在 [Lambda 样例代码](https://github.com/NageNalock/AWSAutoTag/tree/master/Lambda2Autotag)中给出了部分常用VPC API 名称。
+2. 大多数资源的 API 都可以在 [AWS 文档](https://amazonaws-china.com/cn/documentation/) 找到。但是，特别的，Lambda 在 CloudTrail 中记录的 API 名称与[Lambda 文档](https://docs.aws.amazon.com/zh_cn/lambda/latest/dg/API_Reference.html)中并不一致。在 [Lambda 样例代码](https://github.com/TerrificMao/AWS-Auto-Tag/blob/master/AWS-Lambda-Auto-Tag/Lambda2Autotag.py)中给出了部分常用VPC API 名称。
 3. 向 S3 中上传文件在**默认**状态下不会被 CloudTrail 记录，需要手动开启，参考[使用 AWS CloudTrail 数据事件为 S3 存储桶启用对象级别日志记录](https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/user-guide/enable-cloudtrail-events.html)。
 4. 若需对代码功能进行修改，建议先在各个服务的**独立代码目录**中阅读代码信息。
 
@@ -37,37 +37,39 @@
 
 #### 各个服务独立代码
 
-[AWS-EC2-Auto-Tag](https://github.com/TerrificMao/AWS-Auto-Tag/blob/master/EC2_Auto_Tag.md) AWS EC2/EBS/Image/Snapshot Auto Tag
+1. [AWS-EC2-Auto-Tag](https://github.com/TerrificMao/AWS-Auto-Tag/blob/master/EC2_Auto_Tag.md) AWS EC2/EBS/Image/Snapshot Auto Tag
 
-单独为 EC2, EBS, Image, Snapshot设置 Tag 及 EC2  在  CloudWatch 中监测到的事件信息
+   单独为 EC2, EBS, Image, Snapshot设置 Tag 及 EC2  在  CloudWatch 中监测到的事件信息
 
-[AWS-VPC-Auto-Tag](https://github.com/TerrificMao/AWS-Auto-Tag/blob/master/EC2_Auto_Tag.md) Refer AWS EC2 Auto Tag
+2. [AWS-VPC-Auto-Tag](https://github.com/TerrificMao/AWS-Auto-Tag/blob/master/EC2_Auto_Tag.md) Refer AWS EC2 Auto Tag
 
-单独为 VPC 设置 Tag 及 VPC  在  CloudWatch 中监测到的事件信息
+   单独为 VPC 设置 Tag 及 VPC  在  CloudWatch 中监测到的事件信息
 
-[AWS-RDS-Auto-Tag](https://github.com/TerrificMao/AWS-Auto-Tag/blob/master/EC2_Auto_Tag.md) Refer AWS EC2 Auto Tag
+3. [AWS-RDS-Auto-Tag](https://github.com/TerrificMao/AWS-Auto-Tag/blob/master/EC2_Auto_Tag.md) Refer AWS EC2 Auto Tag
 
-单独为 RDS 设置 Tag 及 RDS  在  CloudWatch 中监测到的事件信息
+   单独为 RDS 设置 Tag 及 RDS  在  CloudWatch 中监测到的事件信息
 
-[AWS-S3-Auto-Tag](https://github.com/TerrificMao/AWS-Auto-Tag/blob/master/EC2_Auto_Tag.md) Refer AWS EC2 Auto Tag
+4. [AWS-S3-Auto-Tag](https://github.com/TerrificMao/AWS-Auto-Tag/blob/master/EC2_Auto_Tag.md) Refer AWS EC2 Auto Tag
 
-单独为 S3 设置 Tag 及 S3  在  CloudWatch 中监测到的事件信息。
+   单独为 S3 设置 Tag 及 S3  在  CloudWatch 中监测到的事件信息。
 
-特别的，分为对 S3 的**桶（bucket）** 设置 Tag 以及对 S3 中的 **对象（Object）** 设置 Tag
+   特别的，分为对 S3 的**桶（bucket）** 设置 Tag 以及对 S3 中的 **对象（Object）** 设置 Tag
 
-[AWS-DynamoDB-Auto-Tag](https://github.com/TerrificMao/AWS-Auto-Tag/blob/master/EC2_Auto_Tag.md) Refer AWS EC2 Auto Tag
+5. [AWS-DynamoDB-Auto-Tag](https://github.com/TerrificMao/AWS-Auto-Tag/blob/master/EC2_Auto_Tag.md) Refer AWS EC2 Auto Tag
 
-单独为 DynamoDB 设置 Tag 及 DynamoDB  在  CloudWatch 中监测到的事件信息
+   单独为 DynamoDB 设置 Tag 及 DynamoDB  在  CloudWatch 中监测到的事件信息
 
-[AWS-Redshift-Auto-Tag](https://github.com/TerrificMao/AWS-Auto-Tag/blob/master/EC2_Auto_Tag.md) Refer AWS EC2 Auto Tag
+6. [AWS-Redshift-Auto-Tag](https://github.com/TerrificMao/AWS-Auto-Tag/blob/master/EC2_Auto_Tag.md) Refer AWS EC2 Auto Tag
 
-单独为 RedShift 设置 Tag 及 RedShift  在  CloudWatch 中监测到的事件信息
+   单独为 RedShift 设置 Tag 及 RedShift  在  CloudWatch 中监测到的事件信息
 
-[AWS-SQS-Auto-Tag](https://github.com/TerrificMao/AWS-Auto-Tag/blob/master/EC2_Auto_Tag.md) Refer AWS EC2 Auto Tag
+7. [AWS-SQS-Auto-Tag](https://github.com/TerrificMao/AWS-Auto-Tag/blob/master/EC2_Auto_Tag.md) Refer AWS EC2 Auto Tag
 
-单独为 SQS 设置 Tag 及 SQS  在  CloudWatch 中监测到的事件信息
+8. 单独为 SQS 设置 Tag 及 SQS  在  CloudWatch 中监测到的事件信息
 
-[AWS-Lambda-Auto-Tag](https://github.com/TerrificMao/AWS-Auto-Tag/blob/master/EC2_Auto_Tag.md) Refer AWS EC2 Auto Tag
+9. [AWS-Lambda-Auto-Tag](https://github.com/TerrificMao/AWS-Auto-Tag/blob/master/EC2_Auto_Tag.md) Refer AWS EC2 Auto Tag
+
+   单独为 Lambda 设置 Tag 及 Lambda  在  CloudWatch 中监测到的事件信息
 
 
 
